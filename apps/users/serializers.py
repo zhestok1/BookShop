@@ -15,6 +15,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             email=self.validated_data['email'],
             username=self.validated_data['username'],
             password=self.validated_data['password'],
+            is_active=False,
         )
         return user
     
