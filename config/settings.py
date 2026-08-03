@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'apps.books.apps.BooksConfig',
     'apps.comments.apps.CommentsConfig',
     'apps.payments.apps.PaymentsConfig',
+    'apps.cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
