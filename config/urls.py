@@ -12,4 +12,6 @@ urlpatterns = [
     
     # Эндпоины корзины
     path('api/v1/cart/', include('apps.cart.urls')),
+    
+    path('api/v1/comments/', include('apps.comments.urls')),
 ]
