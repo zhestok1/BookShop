@@ -12,7 +12,7 @@ class CategorySerializer(serializers.ModelSerializer):
         
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Author,
+        model = Author
         fields = ['id', 'first_name', 'last_name', 'full_name', 'bio', 'photo', 'date_of_birth']
         
 class BookListSerializer(serializers.ModelSerializer):

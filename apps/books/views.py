@@ -33,7 +33,7 @@ class BookListView(ListAPIView):
     ordering = ['-created_at']
     
     
-class BookDetaiLView(RetrieveAPIView):
+class BookDetailView(RetrieveAPIView):
     queryset = Book.objects.filter(is_active=True).select_related('category', 'author')
     serializer_class = BookDetailSerializer
     permission_classes = [AllowAny]
