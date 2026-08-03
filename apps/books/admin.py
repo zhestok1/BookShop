@@ -17,10 +17,10 @@ class AuthorAdmin(admin.ModelAdmin):
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    # Колонки в таблице списка книг (самое главное)
+    # Колонки в таблице списка книг 
     list_display = ['title', 'category', 'author', 'price', 'stock', 'is_active', 'created_at']
     
-    # Редактируемые поля прямо из таблицы (удобно быстро менять цену/остаток)
+    # Редактируемые поля прямо из таблицы
     list_editable = ['price', 'stock', 'is_active']
     
     # Удобные фильтры справа
