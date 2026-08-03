@@ -9,4 +9,7 @@ urlpatterns = [
     
     # Эндпоинты каталога книг
     path('api/v1/books/', include('apps.books.urls')),
+    
+    # Эндпоины корзины
+    path('api/v1/cart/', include('apps.cart.urls')),
 ]
