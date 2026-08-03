@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from users.models import User
+from apps.users.models import User
 
 class UserRegisterSerializer(serializers.ModelSerializer):
     
@@ -22,4 +22,8 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 class EmailVerifySerializer(serializers.Serializer):
     email = serializers.EmailField()
     code = serializers.CharField(max_length=6)
+    
+
+    
+        
     
