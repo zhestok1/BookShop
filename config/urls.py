@@ -10,8 +10,12 @@ urlpatterns = [
     # Эндпоинты каталога книг
     path('api/v1/books/', include('apps.books.urls')),
     
-    # Эндпоины корзины
+    # Эндпоинты корзины
     path('api/v1/cart/', include('apps.cart.urls')),
     
+    # Эндпоинты комментариев
     path('api/v1/comments/', include('apps.comments.urls')),
+    
+    # Эндпоинты платёжки
+    path('api/v1/payments.', include('apps.payments.urls')),
 ]
